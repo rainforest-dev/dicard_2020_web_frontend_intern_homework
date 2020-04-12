@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css",
-    "main.js": "/dicard_2020_web_frontend_intern_homework/static/js/main.821e3101.chunk.js",
-    "main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/main.821e3101.chunk.js.map",
+    "main.js": "/dicard_2020_web_frontend_intern_homework/static/js/main.2c2a49ab.chunk.js",
+    "main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/main.2c2a49ab.chunk.js.map",
     "runtime-main.js": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js",
     "runtime-main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js.map",
     "static/js/2.fba63b49.chunk.js": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js",
     "static/js/2.fba63b49.chunk.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js.map",
     "index.html": "/dicard_2020_web_frontend_intern_homework/index.html",
-    "precache-manifest.7cb335a2b08abad53ac4eaa8c0ef4249.js": "/dicard_2020_web_frontend_intern_homework/precache-manifest.7cb335a2b08abad53ac4eaa8c0ef4249.js",
+    "precache-manifest.8f99eebffe56c7330af7c190ca689484.js": "/dicard_2020_web_frontend_intern_homework/precache-manifest.8f99eebffe56c7330af7c190ca689484.js",
     "service-worker.js": "/dicard_2020_web_frontend_intern_homework/service-worker.js",
     "static/css/main.f2032a40.chunk.css.map": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css.map",
     "static/js/2.fba63b49.chunk.js.LICENSE.txt": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6c9a0171.js",
     "static/js/2.fba63b49.chunk.js",
     "static/css/main.f2032a40.chunk.css",
-    "static/js/main.821e3101.chunk.js"
+    "static/js/main.2c2a49ab.chunk.js"
   ]
 }
