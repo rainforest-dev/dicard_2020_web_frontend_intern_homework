@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dicard_2020_web_frontend_intern_homework/static/css/main.32411314.chunk.css",
+    "main.js": "/dicard_2020_web_frontend_intern_homework/static/js/main.30c31f3d.chunk.js",
+    "main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/main.30c31f3d.chunk.js.map",
+    "runtime-main.js": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js",
+    "runtime-main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js.map",
+    "static/js/2.fba63b49.chunk.js": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js",
+    "static/js/2.fba63b49.chunk.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js.map",
+    "index.html": "/dicard_2020_web_frontend_intern_homework/index.html",
+    "precache-manifest.d2cff6012e097c5bfc751d84d0d8d9f4.js": "/dicard_2020_web_frontend_intern_homework/precache-manifest.d2cff6012e097c5bfc751d84d0d8d9f4.js",
+    "service-worker.js": "/dicard_2020_web_frontend_intern_homework/service-worker.js",
+    "static/css/main.32411314.chunk.css.map": "/dicard_2020_web_frontend_intern_homework/static/css/main.32411314.chunk.css.map",
+    "static/js/2.fba63b49.chunk.js.LICENSE.txt": "/dicard_2020_web_frontend_intern_homework/static/js/2.fba63b49.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c9a0171.js",
+    "static/js/2.fba63b49.chunk.js",
+    "static/css/main.32411314.chunk.css",
+    "static/js/main.30c31f3d.chunk.js"
+  ]
+}
