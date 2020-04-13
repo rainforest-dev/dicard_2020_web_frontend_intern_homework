@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect, useLocation, useHistory, useRouteMatch } from 'react-router-dom';
+import { Route, Switch, Redirect, useLocation, useHistory } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/home/Home';
@@ -32,7 +32,7 @@ function App() {
         <Route exact path="/f">
           <Home />
         </Route>
-        <Route exact path="/">
+        <Route path="/">
           <Redirect to="/f" />
         </Route>
       </Switch>
