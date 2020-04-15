@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb5147ac4018603f15524db915b99372",
+    "revision": "22b0e2ae2f39505ef582090b4a272b87",
     "url": "/dicard_2020_web_frontend_intern_homework/index.html"
   },
   {
-    "revision": "646af8e25a74ac9c2b6f",
+    "revision": "40f609a9ac729b52a981",
     "url": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css"
   },
   {
-    "revision": "ab05694b6cafef5112c5",
-    "url": "/dicard_2020_web_frontend_intern_homework/static/js/2.a6223062.chunk.js"
+    "revision": "209022ec8bf5c0ffee36",
+    "url": "/dicard_2020_web_frontend_intern_homework/static/js/2.32952a55.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dicard_2020_web_frontend_intern_homework/static/js/2.a6223062.chunk.js.LICENSE.txt"
+    "url": "/dicard_2020_web_frontend_intern_homework/static/js/2.32952a55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "646af8e25a74ac9c2b6f",
-    "url": "/dicard_2020_web_frontend_intern_homework/static/js/main.95c1fb18.chunk.js"
+    "revision": "40f609a9ac729b52a981",
+    "url": "/dicard_2020_web_frontend_intern_homework/static/js/main.3aaa80b3.chunk.js"
   },
   {
     "revision": "8d61748ab4c1ee383e94",
