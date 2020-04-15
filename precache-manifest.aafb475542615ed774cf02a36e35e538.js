@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22b0e2ae2f39505ef582090b4a272b87",
+    "revision": "daa3b2cd410675cbcfea43058b8ab0df",
     "url": "/dicard_2020_web_frontend_intern_homework/index.html"
   },
   {
-    "revision": "40f609a9ac729b52a981",
+    "revision": "78db4595ca8c98d869d6",
     "url": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dicard_2020_web_frontend_intern_homework/static/js/2.32952a55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40f609a9ac729b52a981",
-    "url": "/dicard_2020_web_frontend_intern_homework/static/js/main.3aaa80b3.chunk.js"
+    "revision": "78db4595ca8c98d869d6",
+    "url": "/dicard_2020_web_frontend_intern_homework/static/js/main.a318fd08.chunk.js"
   },
   {
     "revision": "8d61748ab4c1ee383e94",
