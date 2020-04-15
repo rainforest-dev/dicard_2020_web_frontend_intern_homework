@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css",
-    "main.js": "/dicard_2020_web_frontend_intern_homework/static/js/main.dba93c38.chunk.js",
-    "main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/main.dba93c38.chunk.js.map",
+    "main.js": "/dicard_2020_web_frontend_intern_homework/static/js/main.95c1fb18.chunk.js",
+    "main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/main.95c1fb18.chunk.js.map",
     "runtime-main.js": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js",
     "runtime-main.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/runtime-main.6c9a0171.js.map",
-    "static/js/2.9374b0ff.chunk.js": "/dicard_2020_web_frontend_intern_homework/static/js/2.9374b0ff.chunk.js",
-    "static/js/2.9374b0ff.chunk.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/2.9374b0ff.chunk.js.map",
+    "static/js/2.a6223062.chunk.js": "/dicard_2020_web_frontend_intern_homework/static/js/2.a6223062.chunk.js",
+    "static/js/2.a6223062.chunk.js.map": "/dicard_2020_web_frontend_intern_homework/static/js/2.a6223062.chunk.js.map",
     "index.html": "/dicard_2020_web_frontend_intern_homework/index.html",
-    "precache-manifest.4a7ffd32d9666a20e94c076ce7bdb2bc.js": "/dicard_2020_web_frontend_intern_homework/precache-manifest.4a7ffd32d9666a20e94c076ce7bdb2bc.js",
+    "precache-manifest.2d20bcd176e5610188203e0420b6298d.js": "/dicard_2020_web_frontend_intern_homework/precache-manifest.2d20bcd176e5610188203e0420b6298d.js",
     "service-worker.js": "/dicard_2020_web_frontend_intern_homework/service-worker.js",
     "static/css/main.f2032a40.chunk.css.map": "/dicard_2020_web_frontend_intern_homework/static/css/main.f2032a40.chunk.css.map",
-    "static/js/2.9374b0ff.chunk.js.LICENSE.txt": "/dicard_2020_web_frontend_intern_homework/static/js/2.9374b0ff.chunk.js.LICENSE.txt"
+    "static/js/2.a6223062.chunk.js.LICENSE.txt": "/dicard_2020_web_frontend_intern_homework/static/js/2.a6223062.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6c9a0171.js",
-    "static/js/2.9374b0ff.chunk.js",
+    "static/js/2.a6223062.chunk.js",
     "static/css/main.f2032a40.chunk.css",
-    "static/js/main.dba93c38.chunk.js"
+    "static/js/main.95c1fb18.chunk.js"
   ]
 }
