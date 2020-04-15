@@ -10,7 +10,7 @@ export const usePosts = (lastPostId) => {
       `https://www.dcard.tw/_apicors/posts?popular=true${query}`
     ).then((res) => {
       setPosts(prevPosts => [...prevPosts, ...res.data]);
-    });
+    }).catch((error) => console.log(error));
   }, [lastPostId]);
 
   return posts;

@@ -15,7 +15,7 @@ const List = ({items, itemBuilder, fetchMore}) => {
   }, [fetchMore, isFetching])
 
   const handleScroll = () => {
-    if (Math.round(document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight) setIsFetching(true);
+    if (Math.ceil(document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight) setIsFetching(true);
   };
 
   return (
