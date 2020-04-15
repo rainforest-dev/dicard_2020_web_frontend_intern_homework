@@ -10,9 +10,10 @@ const List = ({items, itemBuilder, fetchMore}) => {
 
   useEffect(() => {
     if (!isFetching) return;
-    fetchMore()
+    console.log(items)
+    fetchMore(items);
     setIsFetching(false);
-  }, [fetchMore, isFetching])
+  }, [fetchMore, isFetching, items])
 
   const handleScroll = () => {
     if (Math.ceil(document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight) setIsFetching(true);

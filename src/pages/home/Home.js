@@ -40,7 +40,7 @@ const Home = () => {
               <Text color='rgba(0, 0, 0, 0.6)'>{post.excerpt}</Text>
             </Card>
           )}
-          fetchMore={() => setLastPostId(posts[posts.length - 1].id)}
+          fetchMore={(items) => setLastPostId(items && items.length ? items[items.length - 1].id : null)}
         />
       </Box>
     </>

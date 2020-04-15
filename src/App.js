@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect, useLocation, useHistory } from 'react-router-dom';
+import { Box } from 'rebass';
 import './App.css';
 
 import Home from './pages/home/Home';
@@ -18,7 +19,6 @@ function App() {
           visible={true}
           component={(
             <>
-              {"Modal"}
               <Post />
             </>
           )}
@@ -27,7 +27,11 @@ function App() {
       </Route>)}
       <Switch location={isModal || location}>
         <Route path="/f/:forumAlias/p/:id">
-          <Post />
+          <Box
+            sx={{ width: ['80%', '60%', '50%'], mx: 'auto' }}
+          >
+            <Post />
+          </Box>
         </Route>
         <Route exact path="/f">
           <Home />

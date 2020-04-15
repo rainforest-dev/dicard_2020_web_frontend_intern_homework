@@ -39,9 +39,8 @@ const Post = () => {
   return (
     <Box
       sx={{
-        width: ['80%', '60%', '50%'],
+        width: '100%',
         minHeight: '100%',
-        mx: 'auto',
         p: 5,
         backgroundColor: '#eee'
       }}

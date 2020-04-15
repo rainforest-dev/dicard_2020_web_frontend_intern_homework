@@ -24,7 +24,7 @@ const Modal = ({visible, component, onCancel}) => {
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center',
-        overflowY: 'scroll'
+        overflowY: 'auto'
       }}
     >
       <Box
@@ -37,7 +37,18 @@ const Modal = ({visible, component, onCancel}) => {
         }}
         onClick={onCancel}
       />
-      {component}
+      <Box
+        sx={{
+          width: ['80%', '60%', '50%'],
+          height: '100%',
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+          overflowY: 'auto'
+        }}
+      >
+        {component}
+      </Box>
     </Box>
   );
 }
