@@ -28,7 +28,7 @@ function App() {
       <Switch location={isModal || location}>
         <Route path="/f/:forumAlias/p/:id">
           <Box
-            sx={{ width: ['80%', '60%', '50%'], mx: 'auto' }}
+            sx={{ width: ['90%', '60%', '50%'], mx: 'auto' }}
           >
             <Post />
           </Box>

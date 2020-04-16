@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useRouteMatch, useHistory, useLocation } from 'react-router-dom';
-import { Box, Card, Heading, Text } from 'rebass';
+import { Box } from 'rebass';
 
 import { usePosts } from './homeHooks';
 import List from '../../components/List';
+import DcardListTile from '../../components/DcardListTile';
 
 const Home = () => {
   const [lastPostId, setLastPostId] = useState();
@@ -16,7 +17,7 @@ const Home = () => {
     <>
       <Box
         sx={{
-          maxWidth: ['80%', '60%', '50%'],
+          maxWidth: ['90%', '60%', '50%'],
           mx: 'auto',
           px: 3,
           backgroundColor: '#eee'
@@ -25,20 +26,14 @@ const Home = () => {
         <List 
           items={posts}
           itemBuilder={(post) => (
-            <Card
+            <DcardListTile
               key={post.id}
-              sx={{
-                p: 3,
-                cursor: 'pointer'
-              }}
+              post={post}
               onClick={() => history.push({
                 pathname: `${url}/${post.forumAlias}/p/${post.id}`,
                 state: { isModal: location }
               })}
-            >
-              <Heading py={3} color='rgba(0, 0, 0, 0.95)' fontWeight='600'>{post.title}</Heading>
-              <Text color='rgba(0, 0, 0, 0.6)'>{post.excerpt}</Text>
-            </Card>
+            />
           )}
           fetchMore={(items) => setLastPostId(items && items.length ? items[items.length - 1].id : null)}
         />

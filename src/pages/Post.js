@@ -41,7 +41,7 @@ const Post = () => {
       sx={{
         width: '100%',
         minHeight: '100%',
-        p: 5,
+        p: [3, 3, 4, 5],
         backgroundColor: '#eee'
       }}
     >

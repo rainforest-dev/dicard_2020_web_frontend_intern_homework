@@ -5,7 +5,7 @@ const Modal = ({visible, component, onCancel}) => {
   const scrollY = window.scrollY;
   useEffect(() => {
     document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
+     document.body.style.top = `-${window.scrollY}px`;
 
     return () => {
       // const scrollY = document.body.style.top;
