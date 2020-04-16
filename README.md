@@ -12,6 +12,10 @@
     * 包含標題 title、內容 content、文章類別 forumName、發布時間 createdAt。
     * 內容中圖片連結能正常顯示、普通連結則可點擊開啟連結。
     
+List View | Post in Modal | Post View
+:--------:|:-------------:|:---------:
+![List View](images/home.png?raw=true "List View") | ![Post in Modal](images/post_in_modal.png?raw=true "Post in Modal") | ![Post View](images/post.png?raw=true "Post View")
+    
     
 ### 技術細節
 1. 串結 Api: 使用 React Hooks，透過更新 `lastPostId` 更新文章列表。
