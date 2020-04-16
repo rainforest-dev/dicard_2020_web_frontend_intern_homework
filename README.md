@@ -1,23 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 2020 Dcard Web Frontend Intern Homework - 鄭羽霖
+* Demo: https://r08521610.github.io/dicard_2020_web_frontend_intern_homework/#/f
+* 執行: 先 `yarn install` or `npm install` 安裝 packages，再 `yarn start` or `npm start` 執行，倘若瀏覽器未打開可到 [http://localhost:3000](http://localhost:3000) 查看執行結果。
 
-## Available Scripts
+### 架構設計
+1. `/f`: 顯示文章列表。
+    * 點擊文章會以 Modal 形式打開貼文，並且路由會改變。點擊預覽器以外的區塊關閉預覽器。
+    * 滑到底部會自動載入之後的貼文。
+    * 列表包含標題 title、摘要 excerpt。
+  
+2. `/f/:forumAlias/p/:id`: 顯示特定文章。
+    * 包含標題 title、內容 content、文章類別 forumName、發布時間 createdAt。
+    * 內容中圖片連結能正常顯示、普通連結則可點擊開啟連結。
+    
+    
+### 技術細節
+1. 串結 Api: 使用 React Hooks，透過更新 `lastPostId` 更新文章列表。
+    ```javascript
+      export const usePosts = (lastPostId) => {
+      const [posts, setPosts] = useState([]);
 
-In the project directory, you can run:
+      useEffect(() => {
+        const query = lastPostId ? `&before=${lastPostId}` : '';
+        Axios.get(
+          `https://.../posts?popular=true${query}`
+        ).then((res) => {
+          setPosts(prevPosts => [...prevPosts, ...res.data]);
+        }).catch((error) => console.log(error));
+      }, [lastPostId]);
 
-### `yarn start`
+      return posts;
+    }
+    ```
+2. 元件化: 增加程式碼易讀性、元件複用性。
+    * List
+        ```javascript
+          <List 
+            items={}
+            itemBuilder={() => {}}
+            fetchMore={}
+          />
+        ```
+    * DcardListTile
+        ```javascript
+          <DcardListTile
+            key={}
+            post={}
+            onClick={() => {}}
+          />
+        ```
+3. 路由
+    ```javascript
+      <Modal />
+      
+      // 判斷轉址前位置，判斷是否以 Modal 形式呈現
+      <Switch location={isModal || location}>
+        <Route path="/f/:forumAlias/p/:id">
+          // 單篇貼文頁面
+        </Route>
+        <Route exact path="/f">
+          // 貼文列表
+        </Route>
+        <Route path="/">
+          <Redirect to="/f" />
+        </Route>
+      </Switch>
+    ```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
+### Others
+#### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,42 +77,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+#### `yarn deploy`
+Setup `"homepage": "https://<your github id>.github.io/<repo name>",` in your `package.json`, then run this script that could deploy the website to your gh-pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
